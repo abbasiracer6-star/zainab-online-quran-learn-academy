@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Zainab Quran Learn Academy — Learn Quran online with qualified tutors.">
+<title>Zainab Quran Learn Academy | Learn Quran Online</title>
+<style>
+:root{--gold:#c49a52;--gold2:#e0bd79;--ink:#10100f;--cream:#f8f5ee;--muted:#6d6a64;--white:#fff;--line:#e9e1d3}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,Arial,sans-serif;color:var(--ink);background:var(--white);line-height:1.6}
+a{text-decoration:none;color:inherit}
+.container{width:min(1140px,92%);margin:auto}
+.top{background:#070707;color:#eee;font-size:14px;padding:9px 0}
+.top .container{display:flex;justify-content:flex-end;gap:24px;flex-wrap:wrap}
+.top a:hover{color:var(--gold2)}
+header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{height:78px;display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:12px}
+.mark{width:46px;height:46px;border:2px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:var(--gold);font-size:23px}
+.brand b{font-family:Georgia,serif;font-size:18px;letter-spacing:.3px}
+.brand span{display:block;color:var(--gold);font-size:11px;font-weight:700;letter-spacing:1.8px}
+.links{display:flex;gap:28px;font-weight:600;font-size:14px}
+.links a:hover{color:var(--gold)}
+.navbtn{background:var(--gold);color:white;padding:11px 19px;border-radius:7px;font-weight:700}
+.menu{display:none;font-size:28px}
+.hero{min-height:650px;display:grid;place-items:center;text-align:center;color:white;position:relative;overflow:hidden;background:
+linear-gradient(90deg,rgba(8,14,11,.9),rgba(8,14,11,.62),rgba(8,14,11,.86)),
+radial-gradient(circle at 22% 45%,#806f57 0 12%,transparent 13%),
+linear-gradient(135deg,#1b2923,#0b1512 55%,#493824)}
+.hero:after{content:"";position:absolute;inset:0;background-image:linear-gradient(30deg,transparent 45%,rgba(255,255,255,.025) 46%,transparent 47%);background-size:38px 38px}
+.hero .inner{position:relative;z-index:1;padding:70px 0}
+.kicker{font-family:Georgia,serif;color:#ead7b1;font-size:24px}
+.hero h1{font-family:Georgia,serif;font-size:clamp(42px,7vw,78px);line-height:1.03;margin:15px auto 20px;max-width:920px}
+.hero p{max-width:720px;margin:auto;color:#eee;font-size:19px}
+.actions{margin-top:32px;display:flex;justify-content:center;gap:13px;flex-wrap:wrap}
+.btn{padding:14px 25px;border-radius:8px;font-weight:800;display:inline-block}
+.primary{background:var(--gold);color:#fff}
+.outline{border:1px solid rgba(255,255,255,.8);color:#fff}
+.primary:hover{background:#aa813e}
+section{padding:82px 0}
+.center{text-align:center}
+.eyebrow{text-transform:uppercase;letter-spacing:2px;color:var(--gold);font-weight:800;font-size:12px}
+.title{font-family:Georgia,serif;font-size:clamp(34px,5vw,54px);line-height:1.1;margin:10px 0 15px}
+.sub{max-width:700px;margin:auto;color:var(--muted)}
+.features{background:var(--cream)}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:38px}
+.card{background:#fff;border:1px solid var(--line);border-radius:15px;padding:30px;box-shadow:0 12px 35px rgba(50,35,10,.06)}
+.icon{width:52px;height:52px;border-radius:12px;background:#f4ead7;color:var(--gold);display:grid;place-items:center;font-size:25px;margin-bottom:18px}
+.card h3{font-family:Georgia,serif;font-size:23px;margin-bottom:8px}
+.card p{color:var(--muted)}
+.courses{background:#fff}
+.course{padding:0;overflow:hidden}
+.course .pic{height:170px;background:linear-gradient(135deg,#29342f,#0e1714);display:grid;place-items:center;color:#dfc185;font-family:Georgia,serif;font-size:38px}
+.course .body{padding:25px}
+.course .body h3{font-size:21px}
+.course ul{list-style:none;color:var(--muted);margin:12px 0 18px}
+.course li{margin:5px 0}
+.course li:before{content:"✓";color:var(--gold);font-weight:bold;margin-right:8px}
+.about{background:#111;color:#fff}
+.about .wrap{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.about .title{color:#fff}
+.about p{color:#cfcfcf}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:28px}
+.stat{border-left:2px solid var(--gold);padding-left:15px}
+.stat b{font-size:25px;color:var(--gold2);display:block}
+.trial{background:linear-gradient(135deg,#c49a52,#a77b39);color:#fff;text-align:center}
+.trial .title{color:#fff}
+.trial p{max-width:650px;margin:0 auto 25px}
+.whitebtn{background:#fff;color:#8b642c}
+.contact{background:var(--cream)}
+.contactgrid{display:grid;grid-template-columns:1fr 1fr;gap:25px;margin-top:35px}
+.contactbox{background:#fff;border:1px solid var(--line);border-radius:15px;padding:28px}
+.contactbox h3{font-family:Georgia,serif;margin-bottom:12px;font-size:24px}
+.contactbox p{margin:8px 0;color:var(--muted)}
+.contactbox a{color:#8b642c;font-weight:700}
+footer{background:#070707;color:#bbb;padding:38px 0}
+footer .foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+footer strong{color:#fff}
+.float{position:fixed;right:18px;bottom:20px;background:#1f9d55;color:#fff;padding:13px 18px;border-radius:50px;font-weight:800;box-shadow:0 8px 25px #0003;z-index:30}
+@media(max-width:800px){
+ .links,.navbtn{display:none}.menu{display:block}
+ .top .container{justify-content:center;font-size:12px}
+ .grid3,.about .wrap,.contactgrid{grid-template-columns:1fr}
+ .hero{min-height:590px}
+ .stats{grid-template-columns:1fr}
+ section{padding:65px 0}
+}
+</style>
+</head>
+<body>
+<div class="top"><div class="container">
+<a href="tel:+92311513663">📞 +92 311 513663</a>
+<a href="https://wa.me/92311513663">💬 WhatsApp</a>
+<a href="mailto:info@zainabquranlearnacademy.com">✉ info@zainabquranlearnacademy.com</a>
+</div></div>
+
+<header><div class="container nav">
+<a class="brand" href="#home"><div class="mark">☪</div><div><b>Zainab</b><span>QURAN LEARN ACADEMY</span></div></a>
+<nav class="links">
+<a href="#home">Home</a><a href="#courses">Courses</a><a href="#about">About</a><a href="#contact">Contact</a>
+</nav>
+<a class="navbtn" href="#trial">Free Trial</a><div class="menu">☰</div>
+</div></header>
+
+<main id="home">
+<section class="hero"><div class="container inner">
+<div class="kicker">بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ</div>
+<h1>Learn Quran Online<br>With Confidence & Ease</h1>
+<p>Personalized Quran classes for children and adults with caring, experienced online tutors — from the comfort of your home.</p>
+<div class="actions"><a class="btn primary" href="#trial">Book Free Trial →</a><a class="btn outline" href="#courses">Explore Courses</a></div>
+</div></section>
+
+<section class="features"><div class="container center">
+<div class="eyebrow">Why choose us</div><h2 class="title">A Better Way to Learn Quran</h2>
+<p class="sub">Structured lessons, flexible timings and one-to-one attention designed around every learner.</p>
+<div class="grid3">
+<div class="card"><div class="icon">◈</div><h3>Qualified Tutors</h3><p>Learn with dedicated tutors who guide you step by step in a friendly online classroom.</p></div>
+<div class="card"><div class="icon">◷</div><h3>Flexible Timings</h3><p>Choose convenient class times that fit your school, work and family routine.</p></div>
+<div class="card"><div class="icon">♡</div><h3>For All Ages</h3><p>Programs for kids, teenagers and adults — beginners are warmly welcome.</p></div>
+</div>
+</div></section>
+
+<section class="courses" id="courses"><div class="container center">
+<div class="eyebrow">Our programs</div><h2 class="title">Quran Courses</h2>
+<p class="sub">Choose a program and start your learning journey with a free trial class.</p>
+<div class="grid3">
+<div class="card course"><div class="pic">Qur'an</div><div class="body"><h3>Quran Reading</h3><ul><li>Basic reading skills</li><li>Daily practice</li><li>One-to-one guidance</li></ul><a class="btn primary" href="#trial">Start Free Trial</a></div></div>
+<div class="card course"><div class="pic">Tajweed</div><div class="body"><h3>Tajweed & Recitation</h3><ul><li>Correct pronunciation</li><li>Tajweed rules</li><li>Recitation improvement</li></ul><a class="btn primary" href="#trial">Start Free Trial</a></div></div>
+<div class="card course"><div class="pic">Kids</div><div class="body"><h3>Quran for Kids</h3><ul><li>Child-friendly lessons</li><li>Engaging learning</li><li>Flexible class schedule</li></ul><a class="btn primary" href="#trial">Start Free Trial</a></div></div>
+</div>
+</div></section>
+
+<section class="about" id="about"><div class="container wrap">
+<div><div class="eyebrow">About the academy</div><h2 class="title">Making Quran Learning Simple, Personal & Meaningful</h2><p>Zainab Quran Learn Academy is focused on making online Quran learning accessible and comfortable for students of different ages and levels.</p><p style="margin-top:14px">Our approach combines regular practice, personal attention and a supportive learning environment.</p>
+<div class="stats"><div class="stat"><b>1-to-1</b>Personal attention</div><div class="stat"><b>Online</b>Learn from home</div><div class="stat"><b>Flexible</b>Class timings</div></div>
+</div>
+<div class="card" style="background:#1c1c1a;border-color:#39352e;color:#fff"><div class="icon">☪</div><h3>Start With a Free Trial</h3><p style="color:#ccc;margin:10px 0 22px">Talk to us on WhatsApp and arrange a convenient trial class.</p><a class="btn primary" href="https://wa.me/92311513663">Chat on WhatsApp</a></div>
+</div></section>
+
+<section class="trial" id="trial"><div class="container center">
+<div class="eyebrow" style="color:#fff">Ready to begin?</div><h2 class="title">Book Your Free Trial Class</h2>
+<p>Message us today and we will help you choose the right Quran learning program and schedule.</p>
+<a class="btn whitebtn" href="https://wa.me/92311513663">WhatsApp +92 311 513663 →</a>
+</div></section>
+
+<section class="contact" id="contact"><div class="container center">
+<div class="eyebrow">Contact us</div><h2 class="title">Let's Start Your Journey</h2>
+<div class="contactgrid">
+<div class="contactbox"><h3>WhatsApp / Phone</h3><p>For admissions and free trial:</p><a href="tel:+92311513663">+92 311 513663</a></div>
+<div class="contactbox"><h3>Email</h3><p>For inquiries and information:</p><a href="mailto:info@zainabquranlearnacademy.com">info@zainabquranlearnacademy.com</a></div>
+</div>
+</div></section>
+</main>
+
+<footer><div class="container foot"><div><strong>Zainab Quran Learn Academy</strong><br>Learn Quran online with ease.</div><div>© 2026 All Rights Reserved.</div></div></footer>
+<a class="float" href="https://wa.me/92311513663">💬 WhatsApp</a>
+</body></html>
